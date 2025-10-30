@@ -17,7 +17,7 @@ data = json.load(movies)
     a=a+1 """
 
 
-def movie():
+""" def movie():
     a=0
     for i in data:
         print (data[a]['title'])
@@ -30,6 +30,21 @@ def movie():
         a=a+1
 movie()
 
-
+ """
 
 def genre():
+    a=0
+    for i in data:
+        print(data[a]['genres'])
+        a=a+1
+    x = input("what genre are you looking for")
+    a=0
+    r=0
+    for i in data:
+        for j in data:
+            if x ==(data[a]['genres'][r]):
+                print (data[a]['title'])
+            r=r+1
+            r=0
+        a=a+1
+genre()
