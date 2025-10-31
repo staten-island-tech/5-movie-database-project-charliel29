@@ -41,10 +41,10 @@ def genre():
     a=0
     r=0
     for i in data:
-        for j in data:
+        for j in data[a]['genres']:
             if x ==(data[a]['genres'][r]):
                 print (data[a]['title'])
-            r=r+1
+                r=r+1
             r=0
-        a=a+1
+            a=a+1
 genre()
